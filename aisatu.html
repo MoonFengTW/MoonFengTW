@@ -1,0 +1,27 @@
+<script language="JavaScript">
+<!--
+Messages=new Array(6);
+Message[0]="ねむ〜い";
+Message[1]="おはようございま〜す";
+Message[2]="お昼ご飯だ〜";
+Message[3]="こんにちは〜";
+Message[4]="こんばんは〜";
+Message[5]="よい子は寝ましょう";
+today=new Date();
+H=today.getHours();
+if(H<=4){
+  MN=0;
+}else if(H<=11){
+  MN=1;
+}else if(H<=13){
+  MN=2;
+}else if(H<=17){
+  MN=3;
+}else if(H<=21){
+  MN=4;
+}else if(H<=24){
+  MN=5;
+}
+document.write("<div style='font-size:14px;color:#666666'>"+Messages[MN]+"</div>");
+//-->
+</script>
