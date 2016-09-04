@@ -1,41 +1,6 @@
 
 <script language="JavaScript">
 <!--
-
-WEEK=new Array(7);
-WEEK[0]="日";
-WEEK[1]="月";
-WEEK[2]="火";
-WEEK[3]="水";
-WEEK[4]="木";
-WEEK[5]="金";
-WEEK[6]="土";
-
-today=new Date();
-YY=today.getFullYear();
-MM=today.getMonth();
-MM=MM+1;
-
-if(MM<10){
-  MM='0'+MM;
-}
-
-DD=today.getDate();
-if(DD<10){
-  DD='0'+DD;
-}
-
-WDay=today.getDay();
-JWDay=WEEK[WDay];
-document.write("<div style='font-size:12px;color:#333333'>今日は"+YY+"年"+MM+"月"+DD+"日("+JWDay+")"+"です。</div>");
-document.write("<div style='font-size:12px;color:#333333'>これからも頑張りますので、楽しみにしてくださいね！</div>");
-//-->
-</script>
-
-
-<script language="JavaScript">
-<!--
-
 Messages=new Array(6);
 
 Message[0]="ねむ〜い";
@@ -62,7 +27,38 @@ if(H<=4){
   MN=5;
 }
 
-document.write("<div style='font-size:14px;color:#666666'>"+Messages[MN]+"</div>");
 
+
+
+WEEK=new Array(7);
+WEEK[0]="日";
+WEEK[1]="月";
+WEEK[2]="火";
+WEEK[3]="水";
+WEEK[4]="木";
+WEEK[5]="金";
+WEEK[6]="土";
+
+today=new Date();
+YY=today.getFullYear();
+MM=today.getMonth();
+MM=MM+1;
+
+if(MM<10){
+  MM='0'+MM;
+}
+
+DD=today.getDate();
+if(DD<10){
+  DD='0'+DD;
+}
+
+WDay=today.getDay();
+JWDay=WEEK[WDay];
+
+document.write("<div style='font-size:14px;color:#666666'>"+Messages[MN]+"</div>");
+document.write("<div style='font-size:12px;color:#333333'>今日は"+YY+"年"+MM+"月"+DD+"日("+JWDay+")"+"です。</div>");
+document.write("<div style='font-size:12px;color:#333333'>これからも頑張りますので、楽しみにしてくださいね！</div>");
 //-->
 </script>
+
