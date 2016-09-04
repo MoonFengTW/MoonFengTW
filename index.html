@@ -2,15 +2,6 @@
 <script language="JavaScript">
 <!--
 
-Messages=new Array(6);
-Message[0]="ねむ〜い";
-Message[1]="おはようございま〜す";
-Message[2]="お昼ご飯だ〜";
-Message[3]="こんにちは〜";
-Message[4]="こんばんは〜";
-Message[5]="よい子は寝ましょう";
-
-
 WEEK=new Array(7);
 WEEK[0]="日";
 WEEK[1]="月";
@@ -37,8 +28,25 @@ if(DD<10){
 WDay=today.getDay();
 JWDay=WEEK[WDay];
 document.write("<div style='font-size:12px;color:#333333'>今日は"+YY+"年"+MM+"月"+DD+"日("+JWDay+")"+"です。</div>");
+//-->
+</script>
 
+
+<script language="JavaScript">
+<!--
+
+Messages=new Array(6);
+
+Message[0]="ねむ〜い";
+Message[1]="おはようございま〜す";
+Message[2]="お昼ご飯だ〜";
+Message[3]="こんにちは〜";
+Message[4]="こんばんは〜";
+Message[5]="よい子は寝ましょう";
+
+today=new Date();
 H=today.getHours();
+
 if(H<=4){
   MN=0;
 }else if(H<=11){
