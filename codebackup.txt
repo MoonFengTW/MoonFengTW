@@ -1,0 +1,8 @@
+<BODY style="background-image:url('mario2020.png'),
+                              url('marioshortbacklow.png');
+             background-repeat:no-repeat,
+                              repeat-x;
+             background-position:right,
+                                left;">
+
+</BODY>
